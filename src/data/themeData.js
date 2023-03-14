@@ -13,7 +13,7 @@ import {
 } from "../theme/theme";
 
 export const themeData = {
-  theme: redThemeDark,
+  theme: blueThemeDark,
 };
 
 export const themes = [

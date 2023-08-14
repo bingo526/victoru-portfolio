@@ -17,3 +17,4 @@ export { default as Achievement } from "./Achievement/Achievement";
 
 export { default as BackToTop } from "./BackToTop/BackToTop";
 export { default as ThemeButtons } from "./ThemeButtons/ThemeButtons";
+export { default as Video } from "./Video/Video";

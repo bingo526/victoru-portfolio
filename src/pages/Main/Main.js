@@ -14,6 +14,7 @@ import {
   Contacts,
   Projects,
   Services,
+  Video,
 } from "../../components";
 import { headerData } from "../../data/headerData";
 
@@ -25,6 +26,7 @@ function Main() {
       </Helmet>
 
       <Navbar />
+      <Video />
       <Landing />
       <About />
       <Education />

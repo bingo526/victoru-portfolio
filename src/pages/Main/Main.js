@@ -41,8 +41,8 @@ function Main() {
       </Helmet>
 
       <Navbar />
-      <Video />
       <Landing />
+      <Video />
       <About />
       <Education />
       <Skills />

@@ -22,8 +22,22 @@ export const experienceData = [
   },
   {
     id: 4,
+    company: "Homely",
+    jobtitle: "Lead Frontend Developer",
+    startYear: "2022",
+    endYear: "2022",
+  },
+  {
+    id: 5,
     company: "Bitspawn",
     jobtitle: "Web3 Frontend Developer",
+    startYear: "2022",
+    endYear: "2023",
+  },
+  {
+    id: 6,
+    company: "Quill AI",
+    jobtitle: "Senior Frontend Developer",
     startYear: "2022",
     endYear: "2023",
   },

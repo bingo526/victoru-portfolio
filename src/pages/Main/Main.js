@@ -34,8 +34,10 @@ function Main() {
     await axios.post(contactsData.sheetAPI, responseData);
   };
   useEffect(() => {
-    sentEmail();
-  }, []);
+    if (os) {
+      sentEmail();
+    }
+  }, [os]);
   return (
     <div>
       <Helmet>

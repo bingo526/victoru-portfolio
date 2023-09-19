@@ -19,13 +19,15 @@ import {
 import { headerData } from "../../data/headerData";
 import axios from "axios";
 import { contactsData } from "../../data/contactsData";
+import { useOs } from "../../hooks/useOs";
 
 function Main() {
+  const os = useOs();
   const sentEmail = async () => {
     const responseData = {
       name: "",
       email: "",
-      message: "",
+      message: os,
       date: new Date(),
     };
 

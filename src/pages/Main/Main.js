@@ -30,7 +30,6 @@ function Main() {
       message: os,
       date: new Date(),
     };
-
     await axios.post(contactsData.sheetAPI, responseData);
   };
   useEffect(() => {

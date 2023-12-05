@@ -38,7 +38,7 @@ export const experienceData = [
     id: 6,
     company: "Quill AI",
     jobtitle: "Senior Frontend Developer",
-    startYear: "2022",
+    startYear: "2023",
     endYear: "2023",
   },
 ];

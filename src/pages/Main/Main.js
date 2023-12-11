@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
 
 import {
@@ -23,20 +23,23 @@ import { useOs } from "../../hooks/useOs";
 
 function Main() {
   const os = useOs();
-  const sentEmail = async () => {
-    const responseData = {
-      name: "",
-      email: "",
-      message: os,
-      date: new Date(),
-    };
-    await axios.post(contactsData.sheetAPI, responseData);
-  };
+  const sentEmail = useCallback(
+    () => async () => {
+      const responseData = {
+        name: "",
+        email: "",
+        message: os,
+        date: new Date(),
+      };
+      await axios.post(contactsData.sheetAPI, responseData);
+    },
+    [os]
+  );
   useEffect(() => {
     if (os) {
       sentEmail();
     }
-  }, [os]);
+  }, [os, sentEmail]);
   return (
     <div>
       <Helmet>
